@@ -15,8 +15,8 @@
          const TAM = 4;
          function potencia($v1,$v2)
          {
-             #pow - Expresion exponencial, devuelve el valor de la base elevado a la potencia 
-             #pow($base,$exp)
+            #pow - Expresion exponencial, devuelve el valor de la base elevado a la potencia 
+            #pow($base,$exp)
             $rdo = pow($v1,$v2);
             return $rdo;
          }
