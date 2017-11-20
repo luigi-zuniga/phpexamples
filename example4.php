@@ -11,9 +11,9 @@
         #Ejercicio example3.php pero colorear la filas alternando gris y blanco. 
         #Ademas, el tamaño sera una constante: define(TAM, 10); 
         
-        #declaracion de constante TAM value 10
-        define(TAM,10);
-
+        #declaracion de constante nombre TAM, value 10
+        #define(TAM,10);
+        const TAM = 10;
         echo "<table border=1>";
             $n = 1;
             for($tr=1;$tr<=TAM;$tr++){
