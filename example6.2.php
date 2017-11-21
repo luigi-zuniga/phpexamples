@@ -15,10 +15,10 @@
                 $rdo = 0;
 
                 #funcion ereg no compatible con php7.0.0
-                if(preg_match("[Jj][Pp][Gg]", $fotos)) rdo=1;
-                if(preg_match("[Gg][Ii][Ff]", $fotos)) rdo=1;
-                if(preg_match("[Pp][Nn][Gg]", $fotos)) rdo=1;
-                if(preg_match("[Bb][Mm][Pp]", $fotos)) rdo=1;
+                if(preg_match("[Jj][Pp][Gg]", $fotos)) $rdo=1;
+                if(preg_match("[Gg][Ii][Ff]", $fotos)) $rdo=1;
+                if(preg_match("[Pp][Nn][Gg]", $fotos)) $rdo=1;
+                if(preg_match("[Bb][Mm][Pp]", $fotos)) $rdo=1;
                 
                 return $rdo;
              }
@@ -46,15 +46,13 @@
                          echo "<td><a href='img/tumbs/MINI-$foto'>";
                          echo "<img src='img/$foto' width=100 height=100></img>";
                          echo "</a></td>";
-                         if($i==4){
-                            echo "</tr>";$i=0;}
+                         if($i==4)
+                         {echo "</tr>";$i=0;}
                          $i++;
                  }
             }
             closedir($puntero);
             echo "</table>";
-
-            
         ?>
     </body>
 </html>
