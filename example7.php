@@ -16,7 +16,7 @@
 
              function valida_foto($fotos)
              {
-                $rdo=0;
+                $rdo = 0;
                 #ereg , comparacion de expresiones regulares.
                 #ESTA FUNCION ESTA OBSOLETA EN PHP5.3 Y ESTA ELIMINADA EN PHP 7.0.0
 
@@ -44,7 +44,6 @@
                          if($i==4){
                             echo "</tr>";$i=0;}
                          $i++;
-                      
                  }
             }
             closedir($puntero);
